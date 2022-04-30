@@ -1,0 +1,457 @@
+{
+  "items": [
+    {
+      "caption": "APP.MODULES.CONTRACT.LIST",
+      "icon": "icon pe-icon pe-7s-note2 f-17 contract",
+      "state": "root.contract-list",
+      "params": {
+        "settlementStateCode": "1788"
+      },
+      "authorities": [
+        "ADMIN",
+        "FINAL_HEAD",
+        "STAFF_DISPATCHER",
+        "PROVINCE_HEAD",
+        "PROVINCE_DISPATCHER",
+        "BRANCH_DISPATCHER",
+        "CONTRACT",
+        "OUT_OBSERVER"
+      ],
+      "children": []
+    },
+    {
+      "caption": "APP.MODULES.MONITORING.TITLE",
+      "icon": "icon pe-icon pe-7s-glasses f-17 monitoring",
+      "state": "",
+      "params": {},
+      "children": [
+        {
+          "caption": "APP.MODULES.MONITORING.CARTABLE",
+          "icon": "icon pe-icon pe-7s-folder f-17",
+          "state": "root.monitoring-cartable",
+          "params": {},
+          "children": [],
+          "authorities": []
+        },
+        {
+          "caption": "APP.MODULES.MONITORING.MISSIONS",
+          "icon": "icon pe-icon pe-7s-rocket f-17",
+          "state": "root.monitoring-mission",
+          "params": {},
+          "children": [],
+          "authorities": [
+            "OBSERVER"
+          ]
+        },
+        {
+          "caption": "APP.MODULES.MONITORING.MISSIONANOUNCEMENT",
+          "icon": "icon pe-icon pe-7s-mail-open-file f-17",
+          "state": "root.monitoring-mission-announcement",
+          "params": {},
+          "children": [],
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "STAFF_DISPATCHER",
+            "PROVINCE_DISPATCHER",
+            "PROVINCE_HEAD"
+          ]
+        },
+        {
+          "caption": "APP.MODULES.MONITORING.ARCHIVE",
+          "icon": "icon pe-icon pe-7s-search f-17",
+          "state": "root.monitoring-list",
+          "params": {},
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.MONITORING.CONVERT_DEBIT",
+          "icon": "icon pe-icon pe-7s-refresh-2 f-17",
+          "state": "root.convert-debit",
+          "params": {},
+          "children": []
+        }
+      ]
+    },
+    {
+      "caption": "APP.MODULES.TRACE.TITLE",
+      "icon": "icon pe-icon pe-7s-alarm f-17 trace",
+      "state": "",
+      "params": {},
+      "children": [
+        {
+          "caption": "APP.MODULES.TRACE.CARTABLE",
+          "icon": "icon pe-icon pe-7s-folder f-17",
+          "state": "root.trace-list",
+          "params": {
+            "steps": "alerted,seen",
+            "type": "mine"
+          },
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.TRACE.WAITING",
+          "icon": "icon pe-icon pe-7s-hourglass f-17",
+          "state": "root.trace-list",
+          "params": {
+            "steps": "waiting",
+            "type": "mine"
+          },
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.TRACE.FINISHED",
+          "icon": "icon pe-icon pe-7s-box2 f-17",
+          "state": "root.trace-list",
+          "params": {
+            "steps": "cleared,failed",
+            "type": "mine"
+          },
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.TRACE.ALL_MINE",
+          "icon": "icon pe-icon pe-7s-copy-file f-17",
+          "state": "root.trace-list",
+          "params": {
+            "steps": "none",
+            "type": "mine"
+          },
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.TRACE.ISSUED",
+          "icon": "icon pe-icon pe-7s-magic-wand f-17",
+          "state": "root.trace-list",
+          "params": {
+            "steps": "none",
+            "type": "issues"
+          },
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.TRACE.REPORT",
+          "icon": "icon pe-icon pe-7s-news-paper f-17",
+          "state": "root.trace-list",
+          "authorities": [],
+          "params": {
+            "steps": "none",
+            "type": "search"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "caption": "APP.MODULES.REPORT.TITLE",
+      "icon": "icon pe-icon pe-7s-graph f-17",
+      "state": "",
+      "authorities": [
+      ],
+      "permissions": [
+        "[GET]::/report/getScoreReport"
+      ],
+      "params": {},
+      "children": [
+        {
+          "caption": "APP.MODULES.MONITORING_REPORT.TITLE",
+          "icon": "icon pe-icon pe-7s-graph1 f-17",
+          "state": "root.report",
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "REPORT"
+          ],
+          "params": {}
+        },
+        {
+          "caption": "APP.MODULES.USERS_REPORT.TITLE",
+          "icon": "icon pe-icon pe-7s-graph3 f-17",
+          "state": "root.usersReport",
+          "authorities": [
+          ],
+          "permissions": [
+            "[GET]::/report/getScoreReport"
+          ],
+          "params": {}
+        },
+        {
+          "caption": "APP.MODULES.GRAPHICAL_REPORT.TITLE",
+          "icon": "icon pe-icon pe-7s-graph2 f-17",
+          "state": "root.graphicalReport",
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD"
+          ],
+          "permissions": [
+            "[GET]::/report/getScoreReport"
+          ],
+          "params": {}
+        },
+        {
+          "caption": "APP.MODULES.UPDATE_REPORT.TITLE",
+          "icon": "icon pe-icon pe-7s-graph2 f-17",
+          "state": "root.update-report",
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD"
+          ],
+          "permissions": [
+            "[GET]::/report/getScoreReport"
+          ],
+          "params": {}
+        }
+      ]
+    },
+    {
+      "caption": "APP.MODULES.BASIC_INFO.TITLE",
+      "icon": "icon pe-icon pe-7s-config f-17",
+      "state": "",
+      "authorities": [
+        "ADMIN",
+        "FINAL_HEAD",
+        "MANAGE_USER_GUIDE",
+        "CHECK_LIST",
+        "CREDIT_SUPPLY_RESOURCE",
+        "BRANCH",
+        "DIRECTIVE_APPROVAL_PLACE",
+        "ECONOMIC_SECTION",
+        "PLAN_TYPE",
+        "INVESTMENT_ACTION",
+        "CONTRACT_TYPE",
+        "ASSURANCE_TYPE",
+        "PROVINCE"
+      ],
+      "params": {},
+      "children": [
+        {
+          "caption": "APP.MODULES.BASIC_INFO.CHECK_LIST.TITLE",
+          "icon": "icon pe-icon pe-7s-note2 f-17",
+          "state": "root.checkList",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "CHECK_LIST"
+          ],
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.BASIC_INFO.CREDIT_SUPPLY_RESOURCE.TITLE",
+          "icon": "icon pe-icon pe-7s-note2 f-17",
+          "state": "root.credit-supply-resource",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "CREDIT_SUPPLY_RESOURCE"
+          ],
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.DIRECTIVE.SUB_RESOURCE_LIST",
+          "icon": "icon pe-icon pe-7s-note2 f-17",
+          "state": "root.sub-resource-list",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "CREDIT_SUPPLY_RESOURCE"
+          ],
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.BASIC_INFO.BRANCH.TITLE",
+          "icon": "icon pe-icon pe-7s-note2 f-17",
+          "state": "root.branch",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "BRANCH"
+          ],
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.BASIC_INFO.DIRECTIVE_APPROVAL_PLACE.TITLE",
+          "icon": "icon pe-icon pe-7s-note2 f-17",
+          "state": "root.directive-approval-place",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "DIRECTIVE_APPROVAL_PLACE"
+          ],
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.BASIC_INFO.ECONOMIC_SECTION.TITLE",
+          "icon": "icon pe-icon pe-7s-note2 f-17",
+          "state": "root.economic-section",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "ECONOMIC_SECTION"
+          ],
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.BASIC_INFO.PLAN_TYPE.TITLE",
+          "icon": "icon pe-icon pe-7s-note2 f-17",
+          "state": "root.plan-type",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "PLAN_TYPE"
+          ],
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.BASIC_INFO.INVESTMENT_ACTION.TITLE",
+          "icon": "icon pe-icon pe-7s-note2 f-17",
+          "state": "root.investment-action",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "INVESTMENT_ACTION"
+          ],
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.BASIC_INFO.CONTRACT_TYPE.TITLE",
+          "icon": "icon pe-icon pe-7s-note2 f-17",
+          "state": "root.contract-type",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "CONTRACT_TYPE"
+          ],
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.BASIC_INFO.CONTRACT_CODE.TITLE",
+          "icon": "icon pe-icon pe-7s-note2 f-17",
+          "state": "root.contract-code",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "CONTRACT_CODE"
+          ],
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.BASIC_INFO.ASSURANCE_TYPE.TITLE",
+          "icon": "icon pe-icon pe-7s-note2 f-17",
+          "state": "root.assurance-type",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "ASSURANCE_TYPE"
+          ],
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.BASIC_INFO.PROVINCE.TITLE",
+          "icon": "icon pe-icon pe-7s-note2 f-17",
+          "state": "root.province-list",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "PROVINCE"
+          ],
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.BASIC_INFO.ISIC.TITLE",
+          "icon": "icon pe-icon pe-7s-note2 f-17",
+          "state": "root.isic-list",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "PROVINCE"
+          ],
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.BASIC_INFO.CONTRACT_FILTER.TITLE",
+          "icon": "icon pe-icon pe-7s-filter f-17",
+          "state": "root.contract-filter",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD"
+          ],
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.BASIC_INFO.MANAGE_USER_GUIDE.TITLE",
+          "icon": "icon pe-icon pe-7s-note2 f-17",
+          "state": "root.manage-user-guide",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "MANAGE_USER_GUIDE"
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "caption": "APP.MODULES.USER.TITLE",
+      "icon": "icon pe-icon pe-7s-users f-17",
+      "state": "",
+      "authorities": [
+        "ADMIN",
+        "FINAL_HEAD",
+        "USER",
+        "ROLE",
+        "PERMISSION",
+        "LOGINLOG"
+      ],
+      "params": {},
+      "children": [
+        {
+          "caption": "APP.MODULES.USER.LIST",
+          "icon": "icon pe-icon pe-7s-id f-17",
+          "state": "root.users.list",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "USER"
+          ],
+          "children": []
+        },
+        {
+          "caption": "APP.MODULES.LOGINLOG.TITLE",
+          "icon": "icon pe-icon pe-7s-look f-17",
+          "state": "root.loginlog.list",
+          "params": {},
+          "authorities": [
+            "ADMIN",
+            "FINAL_HEAD",
+            "LOGINLOG"
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "caption": "APP.MODULES.HELP.TITLE",
+      "icon": "icon pe-icon pe-7s-help1 f-17",
+      "state": "root.help",
+      "authorities": [],
+      "params": {},
+      "children": []
+    }
+  ]
+}

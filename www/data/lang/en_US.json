@@ -1,0 +1,86 @@
+{
+  "APP": {
+    "ACTIONS": {
+      "ADD": "add",
+      "APPROVE": "approve",
+      "BACK": "back",
+      "CANCEL": "cancel",
+      "CREATE": "create",
+      "DELETE": "delete",
+      "EDIT": "edit",
+      "GET": "get",
+      "OK": "ok",
+      "READ": "read",
+      "SEND": "send",
+      "SUBMIT": "submit",
+      "REMOVE": "remove",
+      "UPDATE": "update",
+      "UPLOAD": "upgrade"
+    },
+    "ERRORS": {
+      "401": "unauthorized",
+      "403": "permission denied",
+      "404": "not found",
+      "405": "not allowed",
+      "500": "internal sever error",
+      "DELETE": "error in delete",
+      "GET": "error in get",
+      "PUT": "error in put",
+      "POST": "error in post"
+    },
+    "LANG": {
+      "FA_IR": "persian",
+      "EN_US": "english"
+    },
+    "MAIN": {
+      "BACK_HOME": "back to home",
+      "BASE_INFORMATION": "base information",
+      "FOOTER": "all right reserved",
+      "TITLE": "B2B Market"
+    },
+    "MESSAGES": {
+      "FAIL": "failure",
+      "SUCCESS": "success full",
+      "WELCOME": "wellcome",
+      "SURE": "sure?"
+    },
+    "MODULES": {
+      "AUTH": {
+        "FORGET_PASS": {
+          "TITLE": "forget password"
+        },
+        "INTERNAL_SERVER_ERROR": "internal sever error",
+        "LOGIN": {
+          "TITLE": "login"
+        },
+        "LOGOUT": "logout",
+        "NOT_FOUND": "not found",
+        "REGISTER": {
+          "TITLE": "register"
+        },
+        "RESET_PASS": {
+          "TITLE": "reset password"
+        },
+        "SHARE": {
+          "EMAIL": "email",
+          "PASSWORD": "password",
+          "PASSWORD_REPEAT": "password repeat",
+          "USERNAME": "username"
+        },
+        "UNAUTHORIZED": "unauthorized"
+      },
+      "HOME": {
+        "TITLE": "dashboard"
+      }
+    },
+    "SHARE": {
+      "ADDRESS": "address",
+      "BROWSE": "browse",
+      "DATE": "date",
+      "INDEX": "index",
+      "OPERATION": "operation",
+      "PHONE_NUMBER": "phone number",
+      "POSTAL_CODE": "postal code"
+    }
+  }
+}
